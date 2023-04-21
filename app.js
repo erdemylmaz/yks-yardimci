@@ -730,10 +730,6 @@ class App {
                                     avr: 1,
                                 },
                                 {
-                                    name: 'Bosaltim Sistemi',
-                                    avr: '0 (?)',
-                                },
-                                {
                                     name: 'Uriner Sistem',
                                     avr: 0.8,
                                 },
@@ -1033,6 +1029,8 @@ class App {
     Reset = () => {
         localStorage.removeItem('array');
         localStorage.removeItem('isEnd');
+
+        location.reload(); 
     }
 }
 
